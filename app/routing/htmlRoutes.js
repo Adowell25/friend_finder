@@ -4,12 +4,12 @@ var path = require("path");
 // ROUTING
 module.exports = (app) => {
 
-    // HTML GET REQUEST TO SURVEY PAGE
+    // SURVEY Route
     app.get("/survey", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 
-    // HTML GET REQUEST CATCH ALL ROUTE TO HOME
+    //HOME Route
     app.get("/", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });

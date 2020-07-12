@@ -25,7 +25,7 @@ module.exports = (app) => {
             scoresArr.push(scoreDiff);
         }
 
-        // loop through ours scoresArr
+        // loop scoresArr
         for (var i = 0; i < scoresArr.length; i++) {
             if (scoresArr[i] <= scoresArr[bestMatch]) {
                 bestMatch = i;
